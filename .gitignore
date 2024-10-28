@@ -1,82 +1,35 @@
+# Project files
 HELP.md
-target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
-
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
-
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
-
-### VS Code ###
-.vscode/
 
 # Ignore compiled Java classes
 *.class
 
-# Ignore Maven output directories
-/target/
-/out/
-/build/
+# Ignore build output directories
+target/
+out/
+build/
+*.war
+*.ear
+*.jar
 
-# Ignore IntelliJ IDEA project files
+# Include Maven wrapper JAR
+!.mvn/wrapper/maven-wrapper.jar
+
+# Include specific build directories in main and test
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# Ignore IDE project files
 .idea/
-/*.iml
+*.iml
 *.ipr
 *.iws
-.idea/*
+.vscode/
+nbproject/private/
+
+# Include specific IntelliJ configuration files
 !.idea/libraries
 !.idea/runConfigurations
-*.log
-
-# Ignore OS-specific files
-.DS_Store
-Thumbs.db
-
-# Ignore Java system files
-hs_err_pid*
-
-# Ignore Flyway migration logs
-flyway_schema_history
-
-# Ignore Docker files
-**/Dockerfile.*
-docker-compose.override.yml
-# Ignore Docker-specific files
-.dockerignore
-.docker/
-
-# Ignore Tomcat logs and output
-logs/
-*.log
-work/
-temp/
-
-# Ignore Maven files and dependencies
-.mvn/
-.mvnw
-.mvnw.cmd
 
 # Ignore environment and configuration files
 .env
@@ -84,52 +37,36 @@ temp/
 application.properties
 application-*.properties
 
-# Ignore IntelliJ-specific working directories
-.idea/
-*.iml
-*.ipr
-*.iws
-
-# Ignore temporary files from editors and OS
-*.swp
-*.swo
-*.bak
-*.tmp
-*.orig
-*~
-
-# Ignore generated files from build tools
-*.war
-*.ear
-*.jar
-
-# Ignore binary or any user configuration files
-bin/
-*/bin/
-target/
-.build/
-.buildpath
-
 # Ignore logs and temporary files
-/logs
-*.log
-*.tmp
-
-# Ignore IDE files and metadata
-.project
-.classpath
-.settings/
-
-# Ignore compiled classes and libraries
-lib/
-
-# Ignore miscellaneous generated files
-.vscode/
+logs/
 *.log
 *.tmp
 *.bak
-*.pid
 
 # Ignore OS-specific files
 .DS_Store
 Thumbs.db
+
+# Ignore system files
+hs_err_pid*
+
+# Ignore Docker files
+**/Dockerfile.*
+docker-compose.override.yml
+.dockerignore
+.docker/
+
+# Ignore miscellaneous generated files
+.mvn/
+.mvnw
+.mvnw.cmd
+
+# Ignore temporary files from editors and OS
+*.swp
+*.swo
+*.orig
+*~
+
+# Ignore binary or any user configuration files
+bin/
+*/bin/
