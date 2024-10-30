@@ -1,4 +1,4 @@
-package com.quiz.quiz_game;
+package com.quiz_game;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
